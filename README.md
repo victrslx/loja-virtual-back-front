@@ -155,4 +155,4 @@ front-back/
 
 João Victor  
 
-Projeto final do **Rocket Program - Alpar**.
+Projeto feito para o **Rocket Program - Alpar**.
