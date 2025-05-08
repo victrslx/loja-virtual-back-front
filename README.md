@@ -104,15 +104,14 @@ Esse usuário poderá acessar funcionalidades exclusivas como o cadastro de prod
 ## ⚠️ Observações
 
 - Certifique-se de que o banco de dados já foi criado e que as migrações do Prisma foram aplicadas antes de rodar o seed.
-- Recomenda-se alterar a senha padrão após os primeiros testes para maior segurança.
-
----
 
 Para visualizar o banco:
 
 ```bash
 npx prisma studio
 ```
+
+---
 
 ### 5. Rodar o servidor de desenvolvimento (Backend)
 
