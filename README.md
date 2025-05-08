@@ -1,6 +1,6 @@
 # Loja Virtual - FullStack 🚀
 
-Este repositório contém o **backend** e **frontend** completos de uma loja virtual, desenvolvidos como desafio final do **Rocket Program - Alpar**.
+Este repositório contém o **backend** e **frontend** completos de uma loja virtual, desenvolvidos como desafio do **Rocket Program - Alpar**.
 
 O sistema é composto por:
 - **Backend**: API segura para autenticação, cadastro de produtos e gerenciamento de carrinho.
