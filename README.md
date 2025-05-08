@@ -25,8 +25,6 @@ O sistema é composto por:
 - HTML5
 - CSS3 (Flexbox, Grid, animações)
 - AngularJS 1.8.3
-- FontAwesome (ícones)
-- Regex (validações)
 
 ---
 
@@ -122,7 +120,7 @@ npm run dev
 Servidor disponível em:
 
 ```
-http://localhost:3000
+http://localhost:5500
 ```
 
 ### 6. Frontend: Abrir o projeto
