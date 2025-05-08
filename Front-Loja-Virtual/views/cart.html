@@ -1,0 +1,13 @@
+<div class="cart-container">
+  <h2>Meu Carrinho</h2>
+  <div ng-if="cartItems.length > 0">
+    <div class="cart-item" ng-repeat="item in cartItems">
+      <h3>{{ item.product.name }}</h3>
+      <p><strong>Quantidade:</strong> {{ item.quantity }}</p>
+      <p><strong>Preço:</strong> R$ {{ item.product.price }}</p>
+    </div>
+  </div>
+  <div ng-if="cartItems.length === 0">
+    <p>Seu carrinho está vazio.</p>
+  </div>
+</div>

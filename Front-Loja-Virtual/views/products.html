@@ -1,0 +1,14 @@
+<div class="products-container" ng-controller="ProductController">
+    <h2>Produtos</h2>
+
+    <button ng-if="isAdmin" ng-click="goToAddProduct()">Cadastrar Produto</button>
+
+    <div class="product-card" ng-repeat="product in products">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p><strong>Preço:</strong> R$ {{ product.price }}</p>
+        <button ng-if="isLoggedIn" ng-click="addToCart(product.id)">Adicionar ao Carrinho</button>
+        <p ng-if="!isLoggedIn">Faça login para adicionar ao carrinho.</p>
+    </div>
+</div>
+

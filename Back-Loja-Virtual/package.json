@@ -1,0 +1,35 @@
+{
+  "name": "back-loja-virtual",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js",
+    "reset": "rimraf prisma/dev.db prisma/migrations && npx prisma migrate dev --name init && npx prisma generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victrslx/Back-Loja-Virtual.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/victrslx/Back-Loja-Virtual/issues"
+  },
+  "homepage": "https://github.com/victrslx/Back-Loja-Virtual#readme",
+  "dependencies": {
+    "@prisma/client": "^6.7.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "prisma": "^6.7.0",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

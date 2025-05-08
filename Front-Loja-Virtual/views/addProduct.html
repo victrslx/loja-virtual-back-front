@@ -1,0 +1,9 @@
+<div class="add-product-container" ng-controller="AddProductController">
+    <h2>Adicionar Produto</h2>
+    <form ng-submit="addProduct()">
+        <input type="text" ng-model="product.name" placeholder="Nome do Produto" required>
+        <input type="number" ng-model="product.price" placeholder="Preço" required>
+        <textarea ng-model="product.description" placeholder="Descrição do Produto" required></textarea>
+        <button type="submit">Cadastrar Produto</button>
+    </form>
+</div>

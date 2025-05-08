@@ -1,0 +1,9 @@
+<div class="register-container" ng-controller="RegisterController">
+    <h2>Cadastro</h2>
+    <form ng-submit="register()">
+        <input type="text" ng-model="user.username" placeholder="Usuário" required>
+        <input type="password" ng-model="user.password" placeholder="Senha" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <p>Já tem conta? <a href="#!/login">Login</a></p>
+</div>
