@@ -67,6 +67,46 @@ ACCESS_KEY="sua_chave_jwt_secreta_aqui"
 npx prisma migrate dev --name init
 npx prisma generate
 ```
+# 🌱 Arquivo Seed - Criação de Admin
+
+Para garantir a existência de um usuário administrador no sistema, foi criado um arquivo `seed.js` que insere um admin diretamente no banco de dados.
+
+Este seed é necessário pois o cadastro de usuários pela interface pública permite apenas criação de usuários comuns (`role: user`).
+
+## 🚀 Como Executar
+
+1. Acesse a pasta `Back-Loja-Virtual`:
+
+```bash
+cd Back-Loja-Virtual
+```
+
+2. Execute o comando para rodar o seed:
+
+```bash
+node seed.js
+```
+
+---
+
+## 🧑‍💻 Resultado Esperado
+
+O seed irá criar um usuário com as seguintes credenciais:
+
+- **Usuário**: `admin`
+- **Senha**: `admin123`
+- **Role**: `admin`
+
+Esse usuário poderá acessar funcionalidades exclusivas como o cadastro de produtos.
+
+---
+
+## ⚠️ Observações
+
+- Certifique-se de que o banco de dados já foi criado e que as migrações do Prisma foram aplicadas antes de rodar o seed.
+- Recomenda-se alterar a senha padrão após os primeiros testes para maior segurança.
+
+---
 
 Para visualizar o banco:
 
